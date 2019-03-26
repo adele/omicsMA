@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1553543822328.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "B4EF6FC9",
+    "lastKnownWriteTime" : 1553566591,
+    "last_content_update" : 1553566591839,
+    "path" : "~/Dropbox-copyorig/Workspace/Master paper/R-package/omicsMA/data-raw/loadMetaplasiaData.R",
+    "project_path" : "data-raw/loadMetaplasiaData.R",
+    "properties" : {
+        "cursorPosition" : "17,43",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

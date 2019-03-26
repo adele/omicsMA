@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1553567385299.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "571A69B6",
+    "lastKnownWriteTime" : 1553567509,
+    "last_content_update" : 1553567509,
+    "path" : "~/Dropbox-copyorig/Workspace/Master paper/R-package/omicsMA/NAMESPACE",
+    "project_path" : "NAMESPACE",
+    "properties" : {
+        "cursorPosition" : "13,26",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_namespace"
+}
