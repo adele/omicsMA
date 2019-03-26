@@ -11,21 +11,28 @@ To remove array-specific effects, intensity-dependent dye biases, and other syst
 
 ### Installation
 
-You can download the latest tar.gz file of the source code available at https://github.com/adele/omicsMA/releases/latest and install it with the following command, where `path_to_file` represents the full path and file name of the tar.gz file:
+First, install some dependencies from Bioconductor:
+
 ```r
-install.packages(path_to_file, repos=NULL, type="source")
+source("https://bioconductor.org/biocLite.R")
+biocLite("limma")
+```
+
+Then, you can download the latest tar.gz file with the source code of the omicsMA R package, available at https://github.com/adele/omicsMA/releases/latest, and install it with the following command, where `path_to_file` represents the full path and file name of the tar.gz file:
+```r
+install.packages(path_to_file, repos=NULL, type="source", dependencies=TRUE)
 ```
 
 Or install the development version directly from GitHub. Make sure you have the devtools R package installed. 
 If not, install it with `install.packages("devtools")`.
 
 ```r
-devtools::install_github("adele/omicsMA")
+devtools::install_github("adele/omicsMA", dependencies=TRUE)
 ```
 
 All releases are available at https://github.com/adele/omicsMA/releases. If you want a specific version of the omicsMA R package, for example, v1.0, you can install it directly from the URL:
 ```r
-install.packages("https://github.com/adele/omicsMA/releases/download/v1.0/omicsMA_1.0.tar.gz", repos=NULL, method="libcurl")
+install.packages("https://github.com/adele/omicsMA/releases/download/v1.0/omicsMA_1.0.tar.gz", repos=NULL, method="libcurl", dependencies=TRUE)
 ```
 
 
