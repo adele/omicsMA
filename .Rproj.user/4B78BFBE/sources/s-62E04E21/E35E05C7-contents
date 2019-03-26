@@ -1,5 +1,5 @@
 @article{liu2013heteroscedasticity,
-  title={Heteroscedasticity-robust Cp model averaging},
+  title={Heteroscedasticity-Robust Cp Model Averaging},
   author={Liu, Qingfeng and Okui, Ryo},
   journal={The Econometrics Journal},
   volume={16},
@@ -7,4 +7,23 @@
   pages={463--472},
   year={2013},
   publisher={Wiley Online Library}
+}
+
+
+@article{yang2002comparison,
+  title={Comparison of methods for image analysis on cDNA microarray data},
+  author={Yang, Yee Hwa and Buckley, Michael J and Dudoit, Sandrine and Speed, Terence P},
+  journal={J Comput Graph Stat},
+  volume={11},
+  number={1},
+  pages={108--136},
+  year={2002},
+  publisher={Taylor \& Francis}
+}
+
+@article{ribeiro2019omicsMA,
+  title={Variance-Preserving Estimation of Intensity Values Obtained from Omics Experiments},
+  author={Ribeiro, Adele Helena and Soler, Julia M P and Hirata Jr, Roberto},
+  journal={Submitted for publication},
+  year={2019}
 }

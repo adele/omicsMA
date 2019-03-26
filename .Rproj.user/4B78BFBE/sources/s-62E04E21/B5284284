@@ -7,13 +7,13 @@
     "folds" : "",
     "hash" : "0",
     "id" : "B5284284",
-    "lastKnownWriteTime" : 1553565927,
-    "last_content_update" : 1553565927589,
+    "lastKnownWriteTime" : 1553615110,
+    "last_content_update" : 1553615110894,
     "path" : "~/Dropbox-copyorig/Workspace/Master paper/R-package/omicsMA/R/geneExprEstimators.R",
     "project_path" : "R/geneExprEstimators.R",
     "properties" : {
-        "cursorPosition" : "132,15",
-        "scrollLine" : "115",
+        "cursorPosition" : "395,18",
+        "scrollLine" : "372",
         "source_window_id" : ""
     },
     "relative_order" : 2,

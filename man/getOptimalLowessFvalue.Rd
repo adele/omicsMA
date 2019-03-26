@@ -2,41 +2,47 @@
 % Please edit documentation in R/geneExprEstimators.R
 \name{getOptimalLowessFvalue}
 \alias{getOptimalLowessFvalue}
-\title{Optimal Selection of the LOWESS Bandwidth Parameter Using the HRCP Criterion}
+\title{Optimal Selection of the LOWESS Bandwidth Parameter Using the HRCp Criterion}
 \usage{
 getOptimalLowessFvalue(M.mean, A.mean, eva.values = seq(0.2, 1, by =
   0.05), debug = TRUE, save.objs = TRUE, save.plots = TRUE,
   dir.to.save = "./", array.id = "array")
 }
 \arguments{
-\item{M.mean}{a vector with the M values for the p genes.}
+\item{M.mean}{A numeric vector with the M values for the p genes.}
 
-\item{A.mean}{a vector with the A values for the p genes.}
+\item{A.mean}{A numeric vector with the A values for the p genes.}
 
-\item{eva.values}{a vector with bandwith values to be considered by the LOWESS parameter selection method.}
+\item{eva.values}{A numeric vector with bandwith values to be considered by the LOWESS parameter selection method.}
 
-\item{debug}{Logical indication if you want to view logs of the execution.}
+\item{debug}{A logical value indication if you want to view logs of the execution.}
 
-\item{save.objs}{Logical indicating if you want to save objects with partial results.}
+\item{save.objs}{A logical value indicating if you want to save objects with partial results.}
 
-\item{save.plots}{Logical indicating if you want to generate the M plots
+\item{save.plots}{A logical value indicating if you want to generate the M plots
 illustrating the bandwidth parameter selection process.}
 
-\item{dir.to.save}{path to the folder you want to save the output objects.}
+\item{dir.to.save}{Path to the folder you want to save the output objects.}
 
-\item{array.id}{a character string identifying the array.}
+\item{array.id}{A character string identifying the array.}
 }
 \value{
-a MAList object, as in the limma R package,
-with the MA values after applying within-slide normalization by LOWESS with optimal parameter settings.
+A list with the following elements:
+\describe{
+\item{opt.value}{The optimal bandwith.}
+\item{criterion.val}{A list with the mean square errors for the estimates obtained for each evaluated bandwith.}
+\item{criterion.df}{A list with the effective degrees of freedom for the estimates obtained for each evaluated bandwith.}
+\item{fits}{A list with the estimates obtained for each evaluated bandwith.}
+}
 }
 \description{
-Data-driven parameter selection method that is parsimonious and considers
-intrinsic characteristics of microarray data, such as heteroskedasticity. Particularly, the
-best bandwidth is selected according to the HRCp criterion.
+LOWESS parameter selection method, proposed by \insertCite{ribeiro2019omicsMA}{omicsMA},
+that is parsimonious and considers intrinsic characteristics of microarray data,
+such as heteroskedasticity. Particularly, the best bandwidth is selected according to
+the HRCp criterion \insertCite{liu2013heteroscedasticity}{omicsMA}.
 }
 \references{
 {
-  \insertRef{liu2013heteroscedasticity}{omicsMA}
+   \insertAllCited
 }
 }

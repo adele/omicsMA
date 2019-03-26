@@ -9,39 +9,41 @@ estimateMAValues(R.mean, G.mean, R.var, G.var, RG.cov, R.bckg, G.bckg,
   putaway.perc = 0.05, array.ids = NULL, gene.ids = NULL)
 }
 \arguments{
-\item{R.mean}{a p x n matrix of mean values for the red (test) foreground intensities.}
+\item{R.mean}{A p x n matrix of mean values for the red (test) foreground intensities.}
 
-\item{G.mean}{a p x n matrix of mean values for the green (reference) foreground intensities.}
+\item{G.mean}{A p x n matrix of mean values for the green (reference) foreground intensities.}
 
-\item{R.var}{a p x n matrix of variances of the red foreground intensities.}
+\item{R.var}{A p x n matrix of variances of the red foreground intensities.}
 
-\item{G.var}{a p x n matrix of variances of the green foreground intensities.}
+\item{G.var}{A p x n matrix of variances of the green foreground intensities.}
 
-\item{RG.cov}{a p x n matrix of covariances between the green and red foreground intensities.}
+\item{RG.cov}{A p x n matrix of covariances between the green and red foreground intensities.}
 
-\item{R.bckg}{a p x n matrix of mean values of the red background intensities.}
+\item{R.bckg}{A p x n matrix of mean values of the red background intensities.}
 
-\item{G.bckg}{a p x n matrix of mean values of the green background intensities.}
+\item{G.bckg}{A p x n matrix of mean values of the green background intensities.}
 
-\item{estimator}{a character string indicating the estimation method. The options are 'conventional' and 'second-order'.}
+\item{estimator}{A character string indicating the estimation method. The options are 'conventional' and 'second-order'.
+If estimator is set as 'second-order', then an estimator that takes into account pixel-level variability is used.}
 
-\item{bgcorr}{a character string indicating the background correction method. The options are 'none' and 'normexp'.}
+\item{bgcorr}{A character string indicating the background correction method. The options are 'none' and 'normexp'.}
 
-\item{offset}{a numeric parameter for the normexp background correction.}
+\item{offset}{A numeric parameter for the normexp background correction.}
 
-\item{putaway.perc}{a scalar between 0 and 100 indicating percentage of genes expressions.
+\item{putaway.perc}{A scalar between 0 and 100 indicating percentage of genes expressions.
 with high variance to be discarded. Default is 0.05.}
 
-\item{array.ids}{a character vector with identifiers of the arrays.}
+\item{array.ids}{A character vector with identifiers of the arrays.}
 
-\item{gene.ids}{a character vector with identifiers of the genes.}
+\item{gene.ids}{A character vector with identifiers of the genes.}
 }
 \value{
-a limma's MAlist object with the M and A values
+A limma's MAlist object with the M and A values
 }
 \description{
-Method for estimating the intensity values M and A, considering p spots/genes and n microarray slides.
- If estimator is set as 'second-order', then an estimator that takes into account pixel-level inaccuracies is used.
+Estimates the intensity values M and A, considering p spots/genes and n microarray slides,
+by using the conventional method \insertCite{yang2002comparison}{omicsMA} or the one that takes into account
+pixel-level variability \insertCite{ribeiro2019omicsMA}{omicsMA}.
 }
 \examples{
 \donttest{
@@ -52,4 +54,9 @@ MA <- estimateMAValues(metaplasia$R.mean, metaplasia$G.mean,
                        array.ids=metaplasia$array.ids, gene.ids=metaplasia$gene.ids)
 }
 
+}
+\references{
+{
+   \insertAllCited
+}
 }

@@ -7,13 +7,13 @@
     "folds" : "",
     "hash" : "0",
     "id" : "B4EF6FC9",
-    "lastKnownWriteTime" : 1553566591,
-    "last_content_update" : 1553566591839,
+    "lastKnownWriteTime" : 1553627227,
+    "last_content_update" : 1553627227019,
     "path" : "~/Dropbox-copyorig/Workspace/Master paper/R-package/omicsMA/data-raw/loadMetaplasiaData.R",
     "project_path" : "data-raw/loadMetaplasiaData.R",
     "properties" : {
-        "cursorPosition" : "17,43",
-        "scrollLine" : "0"
+        "cursorPosition" : "60,61",
+        "scrollLine" : "31"
     },
     "relative_order" : 4,
     "source_on_save" : false,

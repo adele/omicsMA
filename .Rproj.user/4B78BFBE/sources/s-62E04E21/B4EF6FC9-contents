@@ -24,7 +24,7 @@ metaplasiaMP <- loadData(fileConf="loadSelMetaplasiaData.conf")
 ###########################################
 
 
-# Ids of the n slides:
+# IDs of the n slides:
 barcodes <- getLabels(metaplasiaMP, "BARCODE")
 squares <- getLabels(metaplasiaMP, "QUADRANTE")
 array.ids <- paste(barcodes, "_", squares, sep="")
@@ -58,4 +58,4 @@ metaplasia <- list(array.ids = array.ids, gene.ids = gene.ids, gene.names = gene
                    R.bckg = R.bckg, G.bckg = G.bckg,
                    R.size = R.size, G.size = G.size)
 
-devtools::use_data(metaplasia, compress="xz")
+usethis::use_data(metaplasia, compress="xz", overwrite = TRUE)
