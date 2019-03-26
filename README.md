@@ -16,16 +16,17 @@ You can download the latest tar.gz file of the source code available at https://
 install.packages(path_to_file, repos = NULL, type="source")
 ```
 
-You can also install a specific version of the omicsMA R package, for example, v1.0, directly from the URL:
-```r
-install.packages("https://github.com/adele/omicsMA/releases/download/v1.0/omicsMA_1.0.tar.gz", repos=NULL, method="libcurl")
-```
-
 Or install the development version directly from GitHub. Make sure you have the devtools R package installed. 
 If not, install it with `install.packages("devtools")`.
 
 ```r
 devtools::install_github("adele/omicsMA")
 ```
+
+All releases are available at https://github.com/adele/omicsMA/releases. If you want a specific version of the omicsMA R package, for example, v1.0, you can install it directly from the URL:
+```r
+install.packages("https://github.com/adele/omicsMA/releases/download/v1.0/omicsMA_1.0.tar.gz", repos=NULL, method="libcurl")
+```
+
 
 
