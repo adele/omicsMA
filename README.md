@@ -13,7 +13,7 @@ To remove array-specific effects, intensity-dependent dye biases, and other syst
 
 You can download the latest tar.gz file of the source code available at https://github.com/adele/omicsMA/releases/latest and install it with the following command, where `path_to_file` represents the full path and file name of the tar.gz file:
 ```r
-install.packages(path_to_file, repos = NULL, type="source")
+install.packages(path_to_file, repos=NULL, type="source")
 ```
 
 Or install the development version directly from GitHub. Make sure you have the devtools R package installed. 
