@@ -12,10 +12,10 @@ To remove array-specific effects, intensity-dependent dye biases, and other syst
 ### Installation
 
 First, install some dependencies from Bioconductor:
-
 ```r
 source("https://bioconductor.org/biocLite.R")
 biocLite("limma")
+biocLite("maigesPack") # only a suggestion
 ```
 
 Then, you can download the latest tar.gz file with the source code of the omicsMA R package, available at https://github.com/adele/omicsMA/releases/latest, and install it with the following command, where `path_to_file` represents the full path and file name of the tar.gz file:
@@ -29,11 +29,9 @@ If not, install it with `install.packages("devtools")`.
 ```r
 devtools::install_github("adele/omicsMA", dependencies=TRUE)
 ```
+Note: if you are asked to update packages, then press "a" for all.
 
 All releases are available at https://github.com/adele/omicsMA/releases. If you want a specific version of the omicsMA R package, for example, v1.0, you can install it directly from the URL:
 ```r
 install.packages("https://github.com/adele/omicsMA/releases/download/v1.0/omicsMA_1.0.tar.gz", repos=NULL, method="libcurl", dependencies=TRUE)
 ```
-
-
-
