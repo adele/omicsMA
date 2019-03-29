@@ -9,6 +9,10 @@ Unlike conventional estimation methods which take into account only measures of 
 
 To remove array-specific effects, intensity-dependent dye biases, and other systematic trends of the microarray data, the M and A values have to be subjected to a within-slide normalization. The most used within-slide normalization technique is LOWESS. However, the choice of the LOWESS parameters, particularly the smoothing neighborhood parameter (or bandwidth), critically affects the quality of the microarray data normalization. Thus, to preserve relevant variation that may be removed in LOWESS normalization with arbitrarily chosen parameters, it is provided a parameter selection method that is parsimonious and considers intrinsic characteristics of microarray data, such as heteroskedasticity.
 
+### User Manual
+
+Documentation of the methods provided by omicsMA can be found at: https://github.com/adele/omicsMA/blob/master/manual.pdf
+
 ### Installation
 
 First, install some dependencies from Bioconductor:
