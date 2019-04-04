@@ -1,4 +1,4 @@
-## omicsMA R package: Variance-Preserving Estimation and Normalization of M-A Values from Omics Experiments
+## omicsMA: An R Package for Variance-Preserving Estimation and Normalization of M-A Values from Omics Experiments
 
 
 ### Overview
